@@ -15,20 +15,22 @@ const AwardCard = ({ award: { imgUrl, title, subtitle} }) => (
 )
 
 const Laurels = () => (
-  <div className='app__bg app__wrapper section__container' id='awards'>
-    <div className="app__wrapper_info">
-      <SubHeading title='Awards & recongnition' />
-      <h1 className="headtext__cormorant">Our Lurels</h1>
-    
-      <div className="app__laurels_awards">
-        {data.awards.map((award) => <AwardCard award={award} key={award.title} />)}
+  <section className="app__bg">
+    <div className='app__wrapper section__container' id='awards'>
+      <div className="app__wrapper_info">
+        <SubHeading title='Awards & recongnition' />
+        <h1 className="headtext__cormorant">Our Lurels</h1>
+      
+        <div className="app__laurels_awards">
+          {data.awards.map((award) => <AwardCard award={award} key={award.title} />)}
+        </div>
+      </div>
+
+      <div className="app__wrapper_img">
+        <img src={images.laurels} alt="laurels" />
       </div>
     </div>
-
-    <div className="app__wrapper_img">
-      <img src={images.laurels} alt="laurels" />
-    </div>
-  </div>
+  </section>
 );
 
 export default Laurels;

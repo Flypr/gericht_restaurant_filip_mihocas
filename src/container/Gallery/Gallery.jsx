@@ -22,7 +22,7 @@ const Gallery = () => {
   }
 
   return (
-    <div className='app__gallery flex__center'>
+    <section className='app__gallery flex__center'>
       <div className="app__gallery-content">
         <SubHeading title='Instagram' />
         <h1 className="headtext__cormorant">Photo Gallery</h1>
@@ -43,7 +43,7 @@ const Gallery = () => {
           <BsArrowRightShort className='gallery__arrow-icon' onClick={() => scroll('right')}/>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

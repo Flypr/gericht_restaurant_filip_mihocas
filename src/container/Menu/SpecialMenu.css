@@ -1,6 +1,9 @@
+.app__specialMenu-section {
+    background: var(--color-black);
+}
+
 .app__specialMenu {
     flex-direction: column;
-    background: var(--color-black);
 }
 
 .app__specialMenu-title {
@@ -13,7 +16,7 @@
     margin: 2rem 0;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: row;
 }
 

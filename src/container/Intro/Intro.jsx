@@ -20,7 +20,7 @@ const Intro = () => {
   }
 
   return (
-    <div className='app__video'>
+    <section className='app__video'>
       <video src={meal} ref={vidRef} type="video/mp4" loop controle={false} muted></video>
       <div className="app__video-overlay flex__center">
         <div className="app__video-overlay_circle flex__center" onClick={handleVideo}>
@@ -30,7 +30,7 @@ const Intro = () => {
           }
         </div>
       </div>
-    </div>
+    </section>
   )
 };
 
